@@ -2,6 +2,7 @@ import React from "react";
 import Intro from "./components/Intro";
 import Song from "./components/Song";
 import Counter from "./components/Counter";
+import Form from "./components/Form";
 
 const App = () => {
   return (
@@ -20,6 +21,7 @@ const App = () => {
       <Song name="Grey Area " date="2019" imgSource="" />
       <Song name="Sometimes I Might Be Introvert" date="2021" imgSource="" />
       <Counter />
+      <Form />
     </>
   );
 };
