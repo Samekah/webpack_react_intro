@@ -1,15 +1,25 @@
 import React from "react";
+import Intro from "./components/Intro";
+import Song from "./components/Song";
+import Counter from "./components/Counter";
 
-const App = ({ name }) => {
-  const myList = [1, 2, 3, 4, 5];
-  const listElements = myList.map((item) => <div>{item}</div>);
-
+const App = () => {
   return (
     <>
-      <h1>Hello, {name}</h1>
-      <h2>Nice to meet you.</h2>
-      <h3>Take care..</h3>
-      {listElements}
+      <Intro />
+      <Song
+        name="A Curious Tale of Trials + Persons"
+        date="2015"
+        imgSource="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a3/Little_Simz%2C_Seat_Village_stage_5.jpg/220px-Little_Simz%2C_Seat_Village_stage_5.jpg"
+      />
+      <Song
+        name="Stillness in Wonderland"
+        date="2016"
+        imgSource="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Little_Simz_Performing.jpg/220px-Little_Simz_Performing.jpg"
+      />
+      <Song name="Grey Area " date="2019" imgSource="" />
+      <Song name="Sometimes I Might Be Introvert" date="2021" imgSource="" />
+      <Counter />
     </>
   );
 };
