@@ -1,5 +1,6 @@
 import React from "react";
 import LikeButton from "../LikeButton";
+import './style.css';
 
 const Song = ({ name, date, imgSource }) => {
   return (
