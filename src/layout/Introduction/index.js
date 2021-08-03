@@ -1,6 +1,6 @@
 import React from "react";
 
-const Intro = () => {
+const Introduction = () => {
   return (
     <div id="introduction">
       <h1>Little Simz</h1>
@@ -18,4 +18,4 @@ const Intro = () => {
   );
 };
 
-export default Intro;
+export default Introduction;
