@@ -1,5 +1,6 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Song } from '../../components';
+import axios from 'axios';
 
 export default () => {
     const [songs, setSongs] = useState([
@@ -24,6 +25,19 @@ export default () => {
             imgSource: "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Little_Simz_Performing.jpg/220px-Little_Simz_Performing.jpg"
         }
     ]);
+
+    useEffect(() => {
+
+        async function fetchJoke(){
+            try{
+                const {data} = await axios.get('https://api.chucknorris.io/jokes/random');
+                console.log(data);
+            } catch (error) {
+                console.error(error)
+            }
+        }
+        fetchJoke();
+    }, [])
 
     function renderSongs(){
         let songsList = songs.map(song => <Song key={song.name} name={song.name} date={song.date} imgSource={song.imgSource}/>)
