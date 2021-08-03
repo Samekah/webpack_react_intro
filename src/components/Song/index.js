@@ -9,6 +9,7 @@ const Song = ({ name, date, imgSource }) => {
   function handleCommentSubmit(event){
     event.preventDefault();
     setComment(event.target.comment.value);
+    event.target.reset();
   }
 
   return (
