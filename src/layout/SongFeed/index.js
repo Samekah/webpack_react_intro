@@ -16,12 +16,12 @@ export default () => {
          {
             name: "Grey Area",
             date: "2019",
-            imgSource: ""
+            imgSource: "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a3/Little_Simz%2C_Seat_Village_stage_5.jpg/220px-Little_Simz%2C_Seat_Village_stage_5.jpg"
         },
         {
             name: "Sometimes I Might Be Introvert",
             date: "2021",
-            imgSource: ""
+            imgSource: "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Little_Simz_Performing.jpg/220px-Little_Simz_Performing.jpg"
         }
     ]);
 

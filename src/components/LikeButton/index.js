@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import './style.css';
 
 const LikeButton = () => {
   const [isLiked, setIsLiked] = useState(false);
@@ -24,7 +25,7 @@ const LikeButton = () => {
   }
 
   return (
-    <button style={buttonStyle} onClick={toggleLike}>
+    <button style={buttonStyle} onClick={toggleLike} className='like-button'>
       {buttonContent}
     </button>
   );
