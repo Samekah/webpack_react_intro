@@ -1,6 +1,6 @@
 import React from "react";
 import { Switch, Route } from 'react-router-dom';
-import { Landing, Home, Activity } from './pages';
+import { Landing, Home, Activity, Geolocation } from './pages';
 import { Nav } from './layout';
 
 const App = () => {
@@ -16,6 +16,9 @@ const App = () => {
       </Route>
       <Route exact path='/activity'>
         <Activity/>
+      </Route>
+      <Route exact path='/location'>
+        <Geolocation/>
       </Route>
     </Switch>
     </>
