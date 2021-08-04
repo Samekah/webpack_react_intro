@@ -26,29 +26,6 @@ export default () => {
         }
     ]);
 
-    useEffect(() => {
-
-        async function fetchJoke(){
-            try{
-                const {data} = await axios.get('https://api.chucknorris.io/jokes/random', {
-                    headers: {
-                      'Access-Control-Allow-Origin': '*',
-                    }
-                });
-                console.log(data);
-            } catch (error) {
-                console.error(error)
-            }
-
-            try{
-                const {data} = await axios.get('https://api.lyrics.ovh/v1/Coldplay/Adventure of a Lifetime');
-                console.log(data);
-            } catch (error) {
-                console.error(error)
-            }
-        }
-        fetchJoke();
-    }, [])
 
     function renderSongs(){
         let songsList = songs.map(song => <Song key={song.name} name={song.name} date={song.date} imgSource={song.imgSource}/>)
