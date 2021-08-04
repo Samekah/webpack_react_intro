@@ -6,7 +6,7 @@ const Activity = () => {
     const [activity, setActivity] = useState("");
 
     useEffect(async ()=>{
-        const { data } = await axios.get('http://www.boredapi.com/api/activity/');
+        const { data } = await axios.get('https://www.boredapi.com/api/activity/');
         setActivity(data.activity);
     }, [])
 
