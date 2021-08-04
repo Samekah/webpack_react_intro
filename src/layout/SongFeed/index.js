@@ -30,7 +30,18 @@ export default () => {
 
         async function fetchJoke(){
             try{
-                const {data} = await axios.get('https://api.chucknorris.io/jokes/random');
+                const {data} = await axios.get('https://api.chucknorris.io/jokes/random', {
+                    headers: {
+                      'Access-Control-Allow-Origin': '*',
+                    }
+                });
+                console.log(data);
+            } catch (error) {
+                console.error(error)
+            }
+
+            try{
+                const {data} = await axios.get('https://api.lyrics.ovh/v1/Coldplay/Adventure of a Lifetime');
                 console.log(data);
             } catch (error) {
                 console.error(error)
