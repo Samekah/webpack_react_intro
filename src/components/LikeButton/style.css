@@ -1,0 +1,10 @@
+.like-button{
+    border-radius: 5px;
+    margin-left: 10px;
+    width: 100px;
+}
+
+.like-button:hover{
+    cursor: pointer;
+    color: white;
+}
